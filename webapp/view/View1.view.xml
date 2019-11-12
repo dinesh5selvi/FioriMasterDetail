@@ -1,0 +1,27 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="oil.ds.controller.View1"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="View1">
+		<headerContent>
+			<Button icon="sap-icon://action" press="onNext"></Button>
+		</headerContent>
+		<content>
+			<SearchField search="onSearch" liveChange="onSearch"></SearchField>
+			<List id="fruitslist" items="{/fruits}" itemPress="onItemPress">
+				<ObjectListItem type="Navigation" intro="{benefit}" title="{name}" icon="{photo}" number="{price}" numberUnit="{unit}">
+					<attributes>
+						<ObjectAttribute title="Type" text="{type}"></ObjectAttribute>
+						<ObjectAttribute title="Color" text="{color}"></ObjectAttribute>
+						<ObjectAttribute title="Availability" text="{availability}"></ObjectAttribute>
+					</attributes>
+				</ObjectListItem>
+			</List>
+		</content>
+		<footer>
+			<Bar>
+				<contentLeft>
+					<Button id="idFilter" icon="sap-icon://filter" press="onFilter"></Button>
+				</contentLeft>
+			</Bar>
+		</footer>
+	</Page>
+</mvc:View>

@@ -1,0 +1,37 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	<!--<Label text="{/suppliers/0/name}"></Label>-->
+	<Table id="idTable" items="{/suppliers}">
+		<headerToolbar>
+			<Toolbar>
+				<content>
+					<ToolbarSpacer></ToolbarSpacer>
+					<Button icon="sap-icon://settings" press="onSettings"></Button>
+				</content>
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column>
+				<Label text="Name"></Label>
+			</Column>
+			<Column>
+				<Label text="City"></Label>
+			</Column>
+			<Column>
+				<Label text="Since When"></Label>
+			</Column>
+			<Column>
+				<Label text="Country"></Label>
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem>
+				<cells>
+					<Text text="{name}"></Text>
+					<Input id="idCity" type="Text" value="{city}" showValueHelp="true" valueHelpRequest="onF4help"></Input>
+					<Text text="{sinceWhen}"></Text>
+					<Text text="{country}"></Text>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</core:FragmentDefinition>
