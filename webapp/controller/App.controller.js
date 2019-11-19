@@ -13,9 +13,9 @@ sap.ui.define([
 		 */
 		onInit: function () {
 
-			var oModel = Model.createFruitModel();
-			// sap.ui.getCore().setModel(oModel);
-			this.getView().setModel(oModel);
+			// var oModel = Model.createFruitModel();
+			// // sap.ui.getCore().setModel(oModel);
+			// this.getView().setModel(oModel);
 			var oApp = this.getView().byId("myApp");
 			var oView1 = new sap.ui.view({
 				id: "idView1",

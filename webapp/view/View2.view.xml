@@ -1,6 +1,6 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="oil.ds.controller.View2"
 	xmlns:html="http://www.w3.org/1999/xhtml">
-	<Page title="View2" showNavButton="true" navButtonPress="onBack">
+	<Page title="{i18n>supplierViewName}" showNavButton="true" navButtonPress="onBack">
 		<content>
 			<ObjectHeader title="{name}" intro="{benefit}" number="{price}" numberUnit="{unit}" icon="{photo}"></ObjectHeader>
 			<IconTabBar>

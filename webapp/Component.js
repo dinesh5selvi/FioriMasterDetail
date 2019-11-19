@@ -4,7 +4,9 @@ sap.ui.define(["sap/ui/core/UIComponent"],
 
 		return UIComponent.extend("oil.ds.Component", {
 				// four sections are there metadata, init,create content,destroy
-				metadata: {},
+				metadata: {
+					manifest: "json"
+				},
 				init: function () {
 					// call the base class constructor which would give us lots of objects e.g. router object
 					// router is used for navigation between views
