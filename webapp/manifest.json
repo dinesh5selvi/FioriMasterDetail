@@ -43,16 +43,24 @@
 			"": {
 				"type": "sap.ui.model.json.JSONModel",
 				"settings": {},
-				"uri": "models/mockData/fruit.json",
-				"preload": false
+				"uri": "models/mockData/fruit.json"
 			},
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {},
-				"uri": "i18n/i18n.properties",
-				"preload": false,
-				"async": true
+				"uri": "i18n/i18n.properties"
 			}
+		},
+		"rootView":{
+			"viewName":"oil.ds.view.App",
+			"type":"XML"
+		},
+		"routing": {
+			"config": {
+				"viewPath": "oil.ds.view",
+				"type":"XML"
+			},
+			"routes":[]
 		}
 	},
 	"sap.app": {
