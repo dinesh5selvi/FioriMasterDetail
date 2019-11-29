@@ -34,10 +34,12 @@
 			"cozy": true
 		},
 		"resources": {
-			"css": [{
-				"uri": "css/style.css",
-				"id": ""
-			}]
+			"css": [
+				{
+					"uri": "css/style.css",
+					"id": ""
+				}
+			]
 		},
 		"models": {
 			"": {
@@ -51,16 +53,22 @@
 				"uri": "i18n/i18n.properties"
 			}
 		},
-		"rootView":{
-			"viewName":"oil.ds.view.App",
-			"type":"XML"
+		"rootView": {
+			"viewName": "oil.ds.view.App",
+			"type": "XML"
 		},
 		"routing": {
 			"config": {
 				"viewPath": "oil.ds.view",
-				"type":"XML"
+				"type": "XML"
 			},
-			"routes":[]
+			"routes": [],
+			"targets": {
+				"Empty": {
+					"viewType": "XML",
+					"viewName": "Empty"
+				}
+			}
 		}
 	},
 	"sap.app": {
@@ -73,7 +81,10 @@
 		},
 		"description": "{{appDesc}}",
 		"tags": {
-			"keywords": ["{{kw1}}", "{{kw2}}"]
+			"keywords": [
+				"{{kw1}}",
+				"{{kw2}}"
+			]
 		},
 		"ach": "IS-OIL-DS"
 	}
