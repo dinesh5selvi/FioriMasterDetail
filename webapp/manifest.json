@@ -62,13 +62,7 @@
 				"viewPath": "oil.ds.view",
 				"type": "XML"
 			},
-			"routes": [],
-			"targets": {
-				"Empty": {
-					"viewType": "XML",
-					"viewName": "Empty"
-				}
-			}
+			"routes": []
 		}
 	},
 	"sap.app": {
