@@ -16,26 +16,26 @@ sap.ui.define([
 			// var oModel = Model.createFruitModel();
 			// // sap.ui.getCore().setModel(oModel);
 			// this.getView().setModel(oModel);
-			var oApp = this.getView().byId("myApp");
-			var oView1 = new sap.ui.view({
-				id: "idView1",
-				viewName: "oil.ds.view.View1",
-				type: sap.ui.core.mvc.ViewType.XML
-			});
-			var oView2 = new sap.ui.view({
-				id: "idView2",
-				viewName: "oil.ds.view.View2",
-				type: sap.ui.core.mvc.ViewType.XML
-			});
-			var oEmpty = new sap.ui.view({
-				id: "idEmpty",
-				viewName: "oil.ds.view.Empty",
-				type: sap.ui.core.mvc.ViewType.XML
-			});
-			oApp.addMasterPage(oView1);
-			oApp.addDetailPage(oView2);
-			oApp.addDetailPage(oEmpty);
-			oApp.setInitialDetail("idEmpty");
+			// var oApp = this.getView().byId("myApp");
+			// var oView1 = new sap.ui.view({
+			// 	id: "idView1",
+			// 	viewName: "oil.ds.view.View1",
+			// 	type: sap.ui.core.mvc.ViewType.XML
+			// });
+			// var oView2 = new sap.ui.view({
+			// 	id: "idView2",
+			// 	viewName: "oil.ds.view.View2",
+			// 	type: sap.ui.core.mvc.ViewType.XML
+			// });
+			// var oEmpty = new sap.ui.view({
+			// 	id: "idEmpty",
+			// 	viewName: "oil.ds.view.Empty",
+			// 	type: sap.ui.core.mvc.ViewType.XML
+			// });
+			// oApp.addMasterPage(oView1);
+			// oApp.addDetailPage(oView2);
+			// oApp.addDetailPage(oEmpty);
+			// oApp.setInitialDetail("idEmpty");
 		},
 
 		/**

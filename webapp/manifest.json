@@ -34,12 +34,10 @@
 			"cozy": true
 		},
 		"resources": {
-			"css": [
-				{
-					"uri": "css/style.css",
-					"id": ""
-				}
-			]
+			"css": [{
+				"uri": "css/style.css",
+				"id": ""
+			}]
 		},
 		"models": {
 			"": {
@@ -59,10 +57,33 @@
 		},
 		"routing": {
 			"config": {
+				"routerClass": "sap.m.routing.Router",
 				"viewPath": "oil.ds.view",
-				"type": "XML"
+				"viewType": "XML",
+				"controlId": "myApp"
 			},
-			"routes": []
+			"routes": [{
+					"pattern": "",
+					"name": "master",
+					"target": ["vishal","kwatra"]
+				}
+
+			],
+			"targets": {
+				"vishal": {
+					"viewName": "View1",
+					"controlAggregation": "masterPages",
+					"viewID": "idView1",
+					"viewLevel": 1
+				},
+				"kwatra":{
+					"viewName":"Empty",
+					"controlAggregation": "detailPages",
+					"viewID": "idEmpty",
+					"viewLevel": 1
+				}
+				
+			}
 		}
 	},
 	"sap.app": {
