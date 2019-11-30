@@ -65,7 +65,11 @@
 			"routes": [{
 					"pattern": "",
 					"name": "master",
-					"target": ["vishal","kwatra"]
+					"target": ["vishal", "kwatra"]
+				}, {
+					"pattern": "fruit",
+					"name": "fruitendpoint",
+					"target": ["manshu", "rani"]
 				}
 
 			],
@@ -76,13 +80,25 @@
 					"viewID": "idView1",
 					"viewLevel": 1
 				},
-				"kwatra":{
-					"viewName":"Empty",
+				"kwatra": {
+					"viewName": "Empty",
 					"controlAggregation": "detailPages",
 					"viewID": "idEmpty",
 					"viewLevel": 1
+				},
+				"manshu": {
+					"viewName": "View1",
+					"controlAggregation": "masterPages",
+					"viewID": "idView1",
+					"viewLevel": 1
+				},
+				"rani": {
+					"viewName": "View2",
+					"controlAggregation": "detailPages",
+					"viewID": "idView2",
+					"viewLevel": 1
 				}
-				
+
 			}
 		}
 	},
