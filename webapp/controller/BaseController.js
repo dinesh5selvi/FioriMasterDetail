@@ -3,7 +3,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller"],
 		return oController.extend("oil.ds.controller.BaseController", {
 				getAppObject: function () {
 					// return sap.ui.getCore().byId("idAppView--myApp");	
-					return this.getView().getParent().getParent();
+					// return this.getView().getParent().getParent();
 				},
 			}
 

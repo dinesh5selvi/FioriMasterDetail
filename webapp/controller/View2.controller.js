@@ -12,7 +12,18 @@ sap.ui.define([
 		 * Can be used to modify the View before it is displayed, to bind event handlers and do other one-time initialization.
 		 * @memberOf oil.ds.view.View2
 		 */
-		onInit: function () {},
+		onInit: function () {
+
+			this.oRouter = this.getOwnerComponent().getRouter();
+			this.oRouter.attachRoutePatternMatched(this.herculis, this);
+		},
+
+		herculis: function (oParams) {
+			var sPath = "/fruits/";
+			var id = oParams.getParameters().arguments.fruitId;
+			sPath = sPath + id;
+			this.getView().bindElement(sPath);
+		},
 
 		onBack: function () {
 			var oApp = this.getAppObject();

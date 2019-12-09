@@ -67,9 +67,9 @@
 					"name": "master",
 					"target": ["vishal", "kwatra"]
 				}, {
-					"pattern": "fruit",
+					"pattern": "fruit/{fruitId}",
 					"name": "fruitendpoint",
-					"target": ["manshu", "rani"]
+					"target": ["vishal", "rani"]
 				}
 
 			],

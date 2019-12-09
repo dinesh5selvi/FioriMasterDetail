@@ -12,6 +12,17 @@ sap.ui.define([
 		 */
 		onInit: function () {
 			var oPopover;
+			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			// or
+			// this.oRouter = this.getOwnerComponent().getRouter();
+			this.oRouter.attachRoutePatternMatched(this.herculis2, this);
+		},
+
+		herculis2: function (oParams) {
+			var id = oParams.getParameters().arguments.fruitId;
+			var oFruitList = this.getView().byId("fruitslist");
+			var oListItems = oFruitList.getItems();
+			oFruitList.setSelectedItem(oListItems[id]);
 		},
 
 		onSearch: function (oEvent) {
@@ -50,10 +61,15 @@ sap.ui.define([
 			var oListItem = oEvent.getParameter("listItem");
 			var oContext = oListItem.getBindingContext();
 			var sPath = oContext.sPath;
-			var oApp = this.getAppObject();
-			var oView2 = oApp.getDetailPages()[0];
-			oView2.bindElement(sPath);
-			oApp.to("idView2");
+			// var oApp = this.getAppObject();
+			// var oView2 = oApp.getDetailPages()[0];
+			// oView2.bindElement(sPath);
+			// oApp.to("idView2");
+
+			var sItemIndex = sPath.split("/")[sPath.split("/").length - 1];
+			this.oRouter.navTo("fruitendpoint", {
+				fruitId: sItemIndex
+			});
 		},
 
 		onFilter: function (oEvent) {
