@@ -80,6 +80,14 @@ sap.ui.define([
 		onValidate: function (oEvent) {
 			var oInput = this.getView().byId("idInput");
 			Validator.checkInput(oInput);
+		},
+
+		onCustomControlEvent: function () {
+			alert("You hovered custom Control");
+		},
+
+		onCustomButtonEvent: function () {
+			alert("You hovered over custom Button");
 		}
 
 		/**

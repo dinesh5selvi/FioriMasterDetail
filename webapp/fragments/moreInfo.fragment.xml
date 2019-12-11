@@ -3,6 +3,7 @@
 		<form:content>
 			<core:Title text="More Info Data" id="title0"/>
 			<cust:customControl color="red"></cust:customControl>
+			<cust:CustomButton text="Hover over me" customButtonEvent="onCustomButtonEvent"></cust:CustomButton>
 			<Label text="Fruit Name" id="label0"/>
 			<Input width="100%" id="input0" value="{name}"/>
 			<Label text="Health Benefit" id="label1"/>
